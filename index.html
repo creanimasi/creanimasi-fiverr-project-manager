@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Creanimasi Fiverr Juni 2025</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      font-family: "Roboto", sans-serif;
+    }
+    input[type="text"],
+    input[type="number"],
+    input[type="date"],
+    select {
+      background-color: transparent;
+      border: none;
+      width: 100%;
+      padding: 0.25rem 0.5rem;
+      font-size: 1rem;
+      color: #1f2937; /* Tailwind gray-800 */
+    }
+    input[type="text"]:focus,
+    input[type="number"]:focus,
+    input[type="date"]:focus,
+    select:focus {
+      outline: none;
+      background-color: #f3f4f6; /* Tailwind gray-100 */
+      border-radius: 0.25rem;
+    }
+    td {
+      vertical-align: middle;
+    }
+    button.action-btn {
+      cursor: pointer;
+      font-size: 1.25rem;
+      padding: 0.25rem 0.5rem;
+      border-radius: 0.25rem;
+      transition: background-color 0.2s ease;
+    }
+    button.action-btn:hover {
+      background-color: #e5e7eb; /* Tailwind gray-200 */
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+  <div class="container mx-auto p-4 bg-white shadow-lg rounded-lg">
+    <h1 class="text-2xl font-bold mb-4 text-gray-800">
+      Share Creanimasi Fiverr Juni 2025
+    </h1>
+
+    <!-- Navigation Tabs -->
+    <div class="mb-4">
+      <a
+        href="#"
+        class="inline-block bg-blue-500 text-white rounded-l py-2 px-4 font-semibold hover:bg-blue-700"
+        >Daily</a
+      >
+      <a
+        href="#"
+        class="inline-block bg-gray-300 text-gray-700 py-2 px-4 font-semibold hover:bg-gray-400"
+        >Timeline</a
+      >
+      <a
+        href="#"
+        class="inline-block bg-gray-300 text-gray-700 py-2 px-4 font-semibold hover:bg-gray-400"
+        >Timeline project</a
+      >
+      <a
+        href="#"
+        class="inline-block bg-gray-300 text-gray-700 py-2 px-4 font-semibold hover:bg-gray-400"
+        >TabelBantu</a
+      >
+      <a
+        href="#"
+        class="inline-block bg-gray-300 text-gray-700 py-2 px-4 font-semibold hover:bg-gray-400"
+        >LIst Harga Ke Freelance</a
+      >
+      <a
+        href="#"
+        class="inline-block bg-gray-300 text-gray-700 py-2 px-4 font-semibold hover:bg-gray-400"
+        >Posting</a
+      >
+    </div>
+
+    <!-- Metrics Section -->
+    <div class="grid grid-cols-3 gap-4 mb-8">
+      <div class="bg-green-100 border border-green-400 p-4 rounded">
+        <h2 class="font-bold text-lg text-green-700">Target Omset Bulanan</h2>
+        <p class="text-xl text-green-900">$1,000.00</p>
+      </div>
+      <div class="bg-yellow-100 border border-yellow-400 p-4 rounded">
+        <h2 class="font-bold text-lg text-yellow-700">
+          Capaian Perhari ini - 20%
+        </h2>
+        <p class="text-xl text-yellow-900">$1,120.00</p>
+      </div>
+      <div class="bg-gray-100 border border-gray-400 p-4 rounded">
+        <h2 class="font-bold text-lg text-gray-700">Total Bonus</h2>
+        <p class="text-xl text-gray-900">Rp0</p>
+      </div>
+    </div>
+
+    <!-- Weekly Tables -->
+    <div id="weeklyTables"></div>
+
+    <!-- To Do List -->
+    <div class="bg-white p-4 rounded shadow-md mt-4">
+      <h2 class="text-xl font-bold mb-2 text-gray-800">To do</h2>
+      <ul class="list-disc list-inside text-gray-700">
+        <li class="mb-1">Tenang, teman-teman! Mari kita evaluasi!</li>
+        <li class="mb-1">Cek workflow apakah bermasalah</li>
+        <li class="mb-1">Gunakan kupon untuk menarik pembeli!</li>
+        <li class="mb-1">
+          Periksa Inbox, Cek apakah ada Chat yang terlewat atau tidak terjawab,
+          termasuk menghubungi kembali pembeli lama!
+        </li>
+        <li class="mb-1">
+          Periksa apakah penggunaan fitur promosi yang disediakan oleh Fiverr sudah
+          optimal
+        </li>
+        <li class="mb-1">
+          Periksa apakah komunikasi dengan pembeli sudah efisien atau masih
+          bertele-tele!
+        </li>
+        <li class="mb-1">update cover dan video gigs baru</li>
+        <li class="mb-1">tawarkan servis lain ke pelanggan yang sudah selesai memesan</li>
+        <li class="mb-1">Optimalakan sosmed, buat art reveal ART RAFFLE</li>
+        <li class="mb-1">Coba curhat atau sampaikan kendalamu pada mentor</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    // Initialize data array
+    let weeklyData = Array(5)
+      .fill()
+      .map(() => [
+        {
+          date: "",
+          name: "",
+          estimatedValue: "",
+          clientBudget: "",
+          agreedValue: "",
+          status: "not expected",
+        },
+      ]);
+
+    // Function to create a new empty entry
+    function createEmptyEntry() {
+      return {
+        date: "",
+        name: "",
+        estimatedValue: "",
+        clientBudget: "",
+        agreedValue: "",
+        status: "not expected",
+      };
+    }
+
+    // Function to render all weekly tables
+    function renderTables() {
+      const container = document.getElementById("weeklyTables");
+      container.innerHTML = "";
+
+      weeklyData.forEach((week, weekIndex) => {
+        const weeklyTable = document.createElement("div");
+        weeklyTable.className = "mb-8";
+        weeklyTable.innerHTML = `
+          <h2 class="text-xl font-bold mb-2 text-gray-800">MINGGU ${
+            weekIndex + 1
+          }</h2>
+          <div class="overflow-x-auto">
+            <table class="min-w-full bg-white border border-gray-300">
+              <thead>
+                <tr class="bg-blue-50 border-b-2 border-blue-200">
+                  <th class="py-2 px-4 border-r text-left text-gray-600 font-bold">
+                    Date
+                  </th>
+                  <th class="py-2 px-4 border-r text-left text-gray-600 font-bold">
+                    Name
+                  </th>
+                  <th class="py-2 px-4 border-r text-left text-gray-600 font-bold">
+                    Estimated Value
+                  </th>
+                  <th class="py-2 px-4 border-r text-left text-gray-600 font-bold">
+                    Client's Budget
+                  </th>
+                  <th class="py-2 px-4 border-r text-left text-gray-600 font-bold">
+                    Agreed Value
+                  </th>
+                  <th class="py-2 px-4 border-r text-left text-gray-600 font-bold">
+                    Status
+                  </th>
+                  <th class="py-2 px-4 text-left text-gray-600 font-bold">
+                    Actions
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                ${week
+                  .map(
+                    (entry, rowIndex) => `
+                  <tr>
+                    <td class="py-2 px-4 border-b">
+                      <input type="date" value="${entry.date}" onchange="updateEntry(${weekIndex}, ${rowIndex}, 'date', this.value)" />
+                    </td>
+                    <td class="py-2 px-4 border-b">
+                      <input type="text" value="${entry.name}" onchange="updateEntry(${weekIndex}, ${rowIndex}, 'name', this.value)" />
+                    </td>
+                    <td class="py-2 px-4 border-b">
+                      <input type="number" value="${entry.estimatedValue}" onchange="updateEntry(${weekIndex}, ${rowIndex}, 'estimatedValue', this.value)" />
+                    </td>
+                    <td class="py-2 px-4 border-b">
+                      <input type="number" value="${entry.clientBudget}" onchange="updateEntry(${weekIndex}, ${rowIndex}, 'clientBudget', this.value)" />
+                    </td>
+                    <td class="py-2 px-4 border-b">
+                      <input type="number" value="${entry.agreedValue}" onchange="updateEntry(${weekIndex}, ${rowIndex}, 'agreedValue', this.value)" />
+                    </td>
+                    <td class="py-2 px-4 border-b">
+                      <select onchange="updateEntry(${weekIndex}, ${rowIndex}, 'status', this.value)">
+                        <option value="not expected" ${
+                          entry.status === "not expected" ? "selected" : ""
+                        }>
+                          Not Expected
+                        </option>
+                        <option value="in progress" ${
+                          entry.status === "in progress" ? "selected" : ""
+                        }>
+                          In Progress
+                        </option>
+                        <option value="completed" ${
+                          entry.status === "completed" ? "selected" : ""
+                        }>
+                          Completed
+                        </option>
+                      </select>
+                    </td>
+                    <td class="py-2 px-4 border-b">
+                      <button class="action-btn text-red-500" onclick="deleteEntry(${weekIndex}, ${rowIndex})" title="Delete Row">
+                        <i class="fas fa-trash"></i>
+                      </button>
+                    </td>
+                  </tr>
+                `
+                  )
+                  .join("")}
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td class="py-2 px-4 border-t font-bold text-gray-700">Total</td>
+                  <td class="py-2 px-4 border-t"></td>
+                  <td class="py-2 px-4 border-t font-bold text-gray-700" id="totalEstimatedValue${weekIndex}">0.00</td>
+                  <td class="py-2 px-4 border-t font-bold text-gray-700" id="totalClientBudget${weekIndex}">0.00</td>
+                  <td class="py-2 px-4 border-t font-bold text-gray-700" id="totalAgreedValue${weekIndex}">0.00</td>
+                  <td class="py-2 px-4 border-t"></td>
+                  <td class="py-2 px-4 border-t"></td>
+                </tr>
+              </tfoot>
+            </table>
+            <button class="mt-2 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600" onclick="addRow(${weekIndex})">
+              Add Row
+            </button>
+          </div>
+        `;
+        container.appendChild(weeklyTable);
+      });
+    }
+
+    // Function to update an entry field
+    function updateEntry(weekIndex, rowIndex, field, value) {
+      weeklyData[weekIndex][rowIndex][field] = value;
+      updateTotals();
+    }
+
+    // Function to calculate sum of a field for a week
+    function calculateSum(weekIndex, field) {
+      return weeklyData[weekIndex]
+        .reduce((sum, entry) => sum + Number(entry[field] || 0), 0)
+        .toFixed(2);
+    }
+
+    // Function to update totals for all weeks
+    function updateTotals() {
+      weeklyData.forEach((week, weekIndex) => {
+        document.getElementById(`totalEstimatedValue${weekIndex}`).textContent = '$' + calculateSum(weekIndex, 'estimatedValue');
+        document.getElementById(`totalClientBudget${weekIndex}`).textContent = '$' + calculateSum(weekIndex, 'clientBudget');
+        document.getElementById(`totalAgreedValue${weekIndex}`).textContent = '$' + calculateSum(weekIndex, 'agreedValue');
+      });
+    }
+
+    // Function to delete an entry
+    function deleteEntry(weekIndex, rowIndex) {
+      if (confirm("Are you sure you want to delete this row?")) {
+        weeklyData[weekIndex].splice(rowIndex, 1);
+        renderTables();
+        updateTotals();
+      }
+    }
+
+    // Function to add a new row
+    function addRow(weekIndex) {
+      weeklyData[weekIndex].push(createEmptyEntry());
+      renderTables();
+      updateTotals();
+    }
+
+    // Initial render
+    renderTables();
+    updateTotals();
+  </script>
+</body>
+</html>
