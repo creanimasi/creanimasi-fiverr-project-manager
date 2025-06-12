@@ -1,0 +1,49 @@
+// Function to render all weekly tables
+    function renderTables() {
+      const container = document.getElementById("weeklyTables");
+      container.innerHTML = "";
+
+      // Initialize status colors for all dropdowns
+      setTimeout(() => {
+        document.querySelectorAll('select').forEach(select => {
+          updateStatusStyle(select);
+        });
+      }, 0);
+
+      weeklyData.forEach((week, weekIndex) => {
+        const weeklyTable = document.createElement("div");
+        weeklyTable.className = "mb-8";
+        weeklyTable.innerHTML = `
+          <h2 class="text-xl font-bold mb-4 text-gray-800">MINGGU ${weekIndex + 1}</h2>
+          <div class="grid grid-cols-7 gap-4 mb-4">
+            ${['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', "Jum'at", 'Sabtu'].map(day => `
+              <div class="bg-green-50 border border-green-200 p-3 rounded-lg">
+                <h3 class="text-sm font-semibold text-green-700">${day}</h3>
+                <div class="mt-2">
+                  <div class="flex items-baseline gap-1">
+                    <span class="text-sm text-green-700">$</span>
+                    <input type="number"
+                           id="${day.toLowerCase()}_week${weekIndex + 1}"
+                           class="text-xl text-green-700 bg-transparent focus:outline-none w-full font-bold"
+                           value="200.00"
+                           onchange="updateDayTarget(this.id, this.value)"
+                           onblur="this.value = parseFloat(this.value || 0).toFixed(2)"
+                           onfocus="this.select()"
+                           min="0"
+                           step="0.01">
+                  </div>
+                  <div class="h-0.5 bg-green-200 mt-1"></div>
+                </div>
+              </div>
+            `).join('')}
+          </div>
+          <div class="overflow-x-auto">
+            <table class="min-w-full bg-white border border-gray-300">
+              <!-- Rest of the table HTML -->
+            </table>
+          </div>
+        `;
+        container.appendChild(weeklyTable);
+      });
+      updateTotals();
+    }
