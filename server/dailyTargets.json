@@ -1,0 +1,51 @@
+{
+  "minggu": {
+    "week1": 20,
+    "week2": 20,
+    "week3": 20,
+    "week4": 20,
+    "week5": 20
+  },
+  "senin": {
+    "week1": 20,
+    "week2": 20,
+    "week3": 20,
+    "week4": 20,
+    "week5": 20
+  },
+  "selasa": {
+    "week1": 20,
+    "week2": 20,
+    "week3": 20,
+    "week4": 20,
+    "week5": 20
+  },
+  "rabu": {
+    "week1": 20,
+    "week2": 20,
+    "week3": 20,
+    "week4": 20,
+    "week5": 20
+  },
+  "kamis": {
+    "week1": 20,
+    "week2": 20,
+    "week3": 20,
+    "week4": 20,
+    "week5": 20
+  },
+  "jum'at": {
+    "week1": 20,
+    "week2": 20,
+    "week3": 20,
+    "week4": 20,
+    "week5": 20
+  },
+  "sabtu": {
+    "week1": 20,
+    "week2": 20,
+    "week3": 20,
+    "week4": 20,
+    "week5": 20
+  }
+}
